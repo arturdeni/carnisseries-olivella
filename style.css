@@ -1,0 +1,383 @@
+/* ===========================================
+   Reset & Base (from Webflow normalize)
+   =========================================== */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  display: inline-block;
+  border: 0;
+}
+
+/* ===========================================
+   Fonts
+   =========================================== */
+@font-face {
+  font-family: PP Neue Montreal;
+  src: url("https://cdn.prod.website-files.com/684ff678a75ff988336f8a01/684ff678a75ff988336f8a0b_PPNeueMontreal-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PP Neue Montreal;
+  src: url("https://cdn.prod.website-files.com/684ff678a75ff988336f8a01/684ff678a75ff988336f8a0f_PPNeueMontreal-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ===========================================
+   Body & Main
+   =========================================== */
+body {
+  color: #131313;
+  background-color: #dfd4c3;
+  font-family:
+    PP Neue Montreal,
+    Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  min-height: 100%;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* ===========================================
+   Section Group
+   =========================================== */
+.section-group {
+  background-color: #dfd4c3;
+  overflow: clip;
+}
+
+/* ===========================================
+   Section Resource
+   =========================================== */
+.section-resource {
+  grid-column-gap: 5vw;
+  grid-row-gap: 5vw;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.section-resource.is--not-full {
+  height: auto;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+/* ===========================================
+   Big Text
+   =========================================== */
+.section-resource__big-p {
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 22vw;
+}
+
+.section-resource__big-p.is--light {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.section-resource__big-p.encarrecs {
+  font-size: 12vw;
+}
+
+/* ===========================================
+   Inner Section
+   =========================================== */
+.section-resource__inner {
+  border-radius: 100em;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  height: 80%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  position: relative;
+}
+
+.section-resource__inner-p {
+  color: #131313;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.section-resource__inner-top-p {
+  color: #fff;
+  text-align: center;
+  font-size: 5vw;
+  position: absolute;
+}
+
+/* ===========================================
+   Top Image (with icon overlay)
+   =========================================== */
+.section-resource__top-image {
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+.section-resource__top-image-img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% + 10vh);
+  margin-top: -5vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ===========================================
+   Osmo Icon SVG
+   =========================================== */
+.osmo-icon-svg {
+  color: #dfd4c3;
+  width: 10vw;
+  position: absolute;
+}
+
+/* ===========================================
+   Three Images Layout
+   =========================================== */
+.three-image {
+  width: 20vw;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.three-image__img {
+  object-fit: cover;
+  width: 100%;
+  height: calc(100% + 10vh);
+  margin-top: -5vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.three-image__img.is--wider {
+  width: 117%;
+  max-width: 120%;
+  margin-left: -2%;
+}
+
+/* ===========================================
+   Full Image
+   =========================================== */
+.full-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.full-image__img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===========================================
+   Utilities
+   =========================================== */
+.is--relative {
+  position: relative;
+}
+
+.code-embed-css,
+.code-embed-js {
+  pointer-events: none;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+/* ===========================================
+   Encàrrecs Section
+   =========================================== */
+.section-encarrecs {
+  flex-direction: column;
+  text-align: center;
+  padding: 10vh 5vw;
+  grid-row-gap: 0;
+}
+
+.encarrecs__label {
+  font-size: 5vw;
+  font-weight: 700;
+  color: #d54636;
+  letter-spacing: 0.1em;
+  margin: 2em 0 0;
+}
+
+.encarrecs__btn {
+  display: inline-block;
+  margin-top: 2em;
+  padding: 1em 3em;
+  border: 2px solid #131313;
+  color: #131313;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.encarrecs__btn:hover {
+  background-color: #131313;
+  color: #dfd4c3;
+}
+
+/* ===========================================
+   Contact Block
+   =========================================== */
+.section-resource--contact {
+  flex-direction: column;
+}
+
+.contact-block {
+  text-align: center;
+  padding: 5vw;
+}
+
+.contact-block__title {
+  font-size: 5vw;
+  margin: 0 0 1em;
+  font-weight: 500;
+}
+
+.contact-block__location {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #d54636;
+  margin: 0 0 0.5em;
+  letter-spacing: 0.1em;
+}
+
+.contact-block__address {
+  font-size: 0.9rem;
+  letter-spacing: 0.15em;
+  margin: 0 0 3em;
+}
+
+.contact-block__btn {
+  display: inline-block;
+  padding: 1em 3em;
+  border: 2px solid #131313;
+  color: #131313;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+}
+
+.contact-block__btn:hover {
+  background-color: #131313;
+  color: #dfd4c3;
+}
+
+/* ===========================================
+   Responsive - Tablet
+   =========================================== */
+@media screen and (max-width: 991px) {
+  .section-resource {
+    grid-column-gap: 2.5vw;
+    grid-row-gap: 2.5vw;
+    position: relative;
+  }
+
+  .section-resource__inside-image-svg {
+    display: none;
+  }
+
+  .osmo-icon-svg {
+    width: 30vw;
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #131313;
+  }
+
+  .section-resource__inner-p {
+    font-size: 10vw;
+  }
+
+  .section-resource__top-image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .three-image {
+    width: 27.5vw;
+    height: 32.5vw;
+  }
+
+  .section-resource__inner-top-p {
+    font-size: 10vw;
+  }
+
+  .section-resource__big-p.encarrecs {
+    font-size: 14vw;
+    gap: 0.1em;
+  }
+
+  .section-resource__big-p.encarrecs span {
+    transform: none !important;
+  }
+}
