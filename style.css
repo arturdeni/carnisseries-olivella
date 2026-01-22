@@ -119,7 +119,7 @@ body {
 }
 
 .section-resource__big-p.encarrecs {
-  font-size: 12vw;
+  font-size: 10vw;
 }
 
 /* ===========================================
@@ -376,8 +376,13 @@ body {
     font-size: 14vw;
     gap: 0.1em;
   }
+}
 
-  .section-resource__big-p.encarrecs span {
-    transform: none !important;
+/* ===========================================
+   Responsive - Big Screen
+   =========================================== */
+@media screen and (min-width: 1640px) {
+  .section-resource--contact {
+    justify-content: flex-end;
   }
 }
